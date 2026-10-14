@@ -1,0 +1,31 @@
+{
+  "kind": "ridge regression",
+  "features": [
+    "bias",
+    "pickup_distance / 40",
+    "delivery_distance / 40",
+    "robots_near_pickup / 10",
+    "busy_robots / 10",
+    "outstanding_orders / 50"
+  ],
+  "weights": [
+    -5.536836011367822,
+    47.10283912935507,
+    37.37503804594293,
+    16.577720840570173,
+    19.4060599982204,
+    4.590662890049883
+  ],
+  "alpha": 0.1,
+  "training_seeds": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "samples": 143,
+  "excluded_unfinished": 43,
+  "target": "ticks from dispatch to delivery; completed jobs only"
+}

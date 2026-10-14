@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "fleet": 6,
+  "ticks": 400,
+  "results": [
+    {
+      "policy": "fifo",
+      "completed": 45,
+      "pending": 4,
+      "moves": 1800,
+      "waits": 199,
+      "mean_latency": 50.2,
+      "throughput": 11.25
+    },
+    {
+      "policy": "nearest",
+      "completed": 45,
+      "pending": 4,
+      "moves": 1756,
+      "waits": 245,
+      "mean_latency": 50.0,
+      "throughput": 11.25
+    }
+  ]
+}

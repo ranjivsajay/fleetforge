@@ -1,0 +1,303 @@
+{
+  "training": {
+    "kind": "ridge regression",
+    "features": [
+      "bias",
+      "pickup_distance / 40",
+      "delivery_distance / 40",
+      "robots_near_pickup / 10",
+      "busy_robots / 10",
+      "outstanding_orders / 50"
+    ],
+    "weights": [
+      -5.536836011367822,
+      47.10283912935507,
+      37.37503804594293,
+      16.577720840570173,
+      19.4060599982204,
+      4.590662890049883
+    ],
+    "alpha": 0.1,
+    "training_seeds": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "samples": 143,
+    "excluded_unfinished": 43,
+    "target": "ticks from dispatch to delivery; completed jobs only"
+  },
+  "evaluation_seeds": [
+    101,
+    202,
+    303
+  ],
+  "results": [
+    {
+      "seed": 101,
+      "fleet": 4,
+      "policy": "fifo",
+      "ticks": 220,
+      "prediction_mae": 4.06,
+      "completed": 27,
+      "pending": 4,
+      "moves": 859,
+      "waits": 10,
+      "mean_latency": 57.5,
+      "throughput": 12.27
+    },
+    {
+      "seed": 101,
+      "fleet": 4,
+      "policy": "nearest",
+      "ticks": 220,
+      "prediction_mae": 4.4,
+      "completed": 27,
+      "pending": 4,
+      "moves": 854,
+      "waits": 8,
+      "mean_latency": 56.2,
+      "throughput": 12.27
+    },
+    {
+      "seed": 101,
+      "fleet": 4,
+      "policy": "learned",
+      "ticks": 220,
+      "prediction_mae": 4.4,
+      "completed": 27,
+      "pending": 4,
+      "moves": 854,
+      "waits": 8,
+      "mean_latency": 56.2,
+      "throughput": 12.27
+    },
+    {
+      "seed": 101,
+      "fleet": 8,
+      "policy": "fifo",
+      "ticks": 220,
+      "prediction_mae": 11.85,
+      "completed": 23,
+      "pending": 8,
+      "moves": 851,
+      "waits": 567,
+      "mean_latency": 44.7,
+      "throughput": 10.45
+    },
+    {
+      "seed": 101,
+      "fleet": 8,
+      "policy": "nearest",
+      "ticks": 220,
+      "prediction_mae": 11.95,
+      "completed": 23,
+      "pending": 8,
+      "moves": 813,
+      "waits": 602,
+      "mean_latency": 43.9,
+      "throughput": 10.45
+    },
+    {
+      "seed": 101,
+      "fleet": 8,
+      "policy": "learned",
+      "ticks": 220,
+      "prediction_mae": 11.95,
+      "completed": 23,
+      "pending": 8,
+      "moves": 813,
+      "waits": 602,
+      "mean_latency": 43.9,
+      "throughput": 10.45
+    },
+    {
+      "seed": 202,
+      "fleet": 4,
+      "policy": "fifo",
+      "ticks": 220,
+      "prediction_mae": 4.44,
+      "completed": 24,
+      "pending": 7,
+      "moves": 878,
+      "waits": 2,
+      "mean_latency": 70.1,
+      "throughput": 10.91
+    },
+    {
+      "seed": 202,
+      "fleet": 4,
+      "policy": "nearest",
+      "ticks": 220,
+      "prediction_mae": 3.61,
+      "completed": 24,
+      "pending": 7,
+      "moves": 875,
+      "waits": 5,
+      "mean_latency": 66.9,
+      "throughput": 10.91
+    },
+    {
+      "seed": 202,
+      "fleet": 4,
+      "policy": "learned",
+      "ticks": 220,
+      "prediction_mae": 3.61,
+      "completed": 24,
+      "pending": 7,
+      "moves": 875,
+      "waits": 5,
+      "mean_latency": 66.9,
+      "throughput": 10.91
+    },
+    {
+      "seed": 202,
+      "fleet": 8,
+      "policy": "fifo",
+      "ticks": 220,
+      "prediction_mae": 13.79,
+      "completed": 24,
+      "pending": 7,
+      "moves": 948,
+      "waits": 412,
+      "mean_latency": 50.5,
+      "throughput": 10.91
+    },
+    {
+      "seed": 202,
+      "fleet": 8,
+      "policy": "nearest",
+      "ticks": 220,
+      "prediction_mae": 14.17,
+      "completed": 24,
+      "pending": 7,
+      "moves": 981,
+      "waits": 411,
+      "mean_latency": 52.0,
+      "throughput": 10.91
+    },
+    {
+      "seed": 202,
+      "fleet": 8,
+      "policy": "learned",
+      "ticks": 220,
+      "prediction_mae": 14.17,
+      "completed": 24,
+      "pending": 7,
+      "moves": 981,
+      "waits": 411,
+      "mean_latency": 52.0,
+      "throughput": 10.91
+    },
+    {
+      "seed": 303,
+      "fleet": 4,
+      "policy": "fifo",
+      "ticks": 220,
+      "prediction_mae": 4.17,
+      "completed": 22,
+      "pending": 9,
+      "moves": 878,
+      "waits": 2,
+      "mean_latency": 73.0,
+      "throughput": 10.0
+    },
+    {
+      "seed": 303,
+      "fleet": 4,
+      "policy": "nearest",
+      "ticks": 220,
+      "prediction_mae": 4.0,
+      "completed": 22,
+      "pending": 9,
+      "moves": 877,
+      "waits": 3,
+      "mean_latency": 74.3,
+      "throughput": 10.0
+    },
+    {
+      "seed": 303,
+      "fleet": 4,
+      "policy": "learned",
+      "ticks": 220,
+      "prediction_mae": 4.0,
+      "completed": 22,
+      "pending": 9,
+      "moves": 877,
+      "waits": 3,
+      "mean_latency": 74.3,
+      "throughput": 10.0
+    },
+    {
+      "seed": 303,
+      "fleet": 8,
+      "policy": "fifo",
+      "ticks": 220,
+      "prediction_mae": 14.73,
+      "completed": 24,
+      "pending": 7,
+      "moves": 1064,
+      "waits": 330,
+      "mean_latency": 51.8,
+      "throughput": 10.91
+    },
+    {
+      "seed": 303,
+      "fleet": 8,
+      "policy": "nearest",
+      "ticks": 220,
+      "prediction_mae": 7.84,
+      "completed": 18,
+      "pending": 13,
+      "moves": 884,
+      "waits": 681,
+      "mean_latency": 38.9,
+      "throughput": 8.18
+    },
+    {
+      "seed": 303,
+      "fleet": 8,
+      "policy": "learned",
+      "ticks": 220,
+      "prediction_mae": 7.84,
+      "completed": 18,
+      "pending": 13,
+      "moves": 884,
+      "waits": 681,
+      "mean_latency": 38.9,
+      "throughput": 8.18
+    }
+  ],
+  "summary": [
+    {
+      "policy": "fifo",
+      "mean_completed": 24.0,
+      "mean_pending": 7.0,
+      "mean_run_latency": 57.93,
+      "mean_prediction_mae": 8.84
+    },
+    {
+      "policy": "nearest",
+      "mean_completed": 23.0,
+      "mean_pending": 8.0,
+      "mean_run_latency": 55.37,
+      "mean_prediction_mae": 7.66
+    },
+    {
+      "policy": "learned",
+      "mean_completed": 23.0,
+      "mean_pending": 8.0,
+      "mean_run_latency": 55.37,
+      "mean_prediction_mae": 7.66
+    }
+  ],
+  "limitations": [
+    "Completed-job targets exclude unfinished jobs and can bias estimates.",
+    "Only one layout; no claim of transfer to new warehouses.",
+    "Small sample; no significance claim. AI can underperform heuristics.",
+    "Mean run latency averages run means, not individual deliveries."
+  ]
+}
